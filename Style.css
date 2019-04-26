@@ -1,17 +1,26 @@
-body {
-background-image: url('Images/StarryNight.jpg');
-color: #FFFFFF;
-background-size: cover;
-text-align: left;
-vertical-align: bottom;
-text-shadow: #00000;
+body, html {
+  height: 100%;
 }
+
+.parallax {
+background-image: url('Images/StarryNight.jpg');
+height: 75%; 
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+text-align: center;
+vertical-align: text-bottom;
+    
+}
+
 .button {
 background-color: #00000;
 border-style: solid;
 border-color: white;
 border: 10px;
-color: white;
+color: black;
 text-align: center;
 text-decoration: none;
 display: inline-block;
