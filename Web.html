@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>TuxedoBearz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Images/StarryNight.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#portfolio" class="w3-button w3-block w3-black">PORTFOLIO</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#aboutme" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">TuxedoBearz</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Portfolio Container -->
+<div class="w3-container" id="portfolio">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PORTFOLIO</span></h5>
+     <img src="Images/Portfolio.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p></p>
+    <p>While in class i was working with processing3, but I have experace with Python.</p>
+    <img src="Images/Processing_3_logo.png" height="100">
+    <br>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      A few words from my Computer Science teacher.
+      <p><i>"."</i></p>
+      <p>MR. Whitely</p>
+    </div>
+  </div>
+</div>
+
+<!-- About Me -->
+<div class="w3-container" id="aboutme">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>I am a sophomore in High School. I am 15 and i hope to find a carrea in Computer Science.</p>
+  
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACTING ME</span></h5>
+    <p>You can contact me with email. My email is TuxedoBearz@gmail.com</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
