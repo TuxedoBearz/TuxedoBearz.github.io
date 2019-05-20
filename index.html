@@ -58,12 +58,25 @@ body, html {
 <div class="w3-container" id="portfolio">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PORTFOLIO</span></h5>
-     <img src="Images/Portfolio.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p></p>
-    <p>While in class i was working with processing3, but I have experace with Python.</p>
-    <a href="http://www.processing.org" target="_blank"><img src="Images/Processing_3_logo.png" height="100"></a>
-    <br>
-    <div class="w3-panel w3-leftbar w3-light-grey">
+    <center> 
+
+    <div class="w4-col s3">
+      <a href="javascript:switchTab('tb_2', 'MY APP');" id="tb_2" class="w3-button w3-block w3-black"><span class="w3-tag w3-wide">MY APP</span></h5>
+    </div>
+    <div class="w4-col s3">
+      <a href="javascript:switchTab('tb_2', 'QUOTES');" id="tb_2" class="w3-button w3-block w3-black"><span class="w3-tag w3-wide">QUOTES</span></h5>
+    </div>
+    <div class="w4-col s3">
+      <a href="javascript:switchTab('tb_2', 'ME');" id="tb_2" class="w3-button w3-block w3-black"><span class="w3-tag w3-wide">ME</span></h5>
+    </div>
+
+  </center>
+
+<div id="MY APP" class="tabcontent"> 
+<center><iframe src="https://appetize.io/embed/gpk6tfwavg6hpev0cmuw8au8um?device=nexus7&scale=45&autoplay=false&orientation=portrait&deviceColor=black" width="360px" height="600px" frameborder="0" scrolling="no"></iframe></center>
+</div> 
+<div id="QUOTES" class="tabcontent" style="display:none;">
+  <div class="w3-panel w3-leftbar w3-light-grey">
       A few words from my Computer Science teacher.
       <p><i>"Trinyce is a competent, engaging, forward-thinking student with a commitment to ensuring that projects are functional upon completion. She has been a value add in the classroom environment; I supsect she will become an excellent employee."</i></p>
       <p>Mr. Whiteley</p>
@@ -74,6 +87,21 @@ body, html {
       <p><i>"Trinyce is a bright, intelligent young lady and it has been a pleasure having her in my class these past two years. I expect her to continue to strive for excellence and become successful!."</i></p>
       <p>Ms. McFadyen</p>
     </div>
+
+</div>
+<div id="ME" class="tabcontent" style="display:none;">
+  <img src="Images/Portfolio.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p></p>
+    <p>While in class i was working with processing3, but I have experace with Python.</p>
+    <a href="http://www.processing.org" target="_blank"><img src="Images/Processing_3_logo.png" height="100"></a>
+    <br>
+</div>
+<div id="content_4" class="tabcontent" style="display:none;">
+<p>Your 4th content</p></p>
+<iframe src="https://jamesbmadden.github.io/scratch-silicon/#244595740" width="400px" height="400px" allowFullscreen></iframe>
+</div>
+     
+    
     <br>
     <center><iframe src="https://appetize.io/embed/3mgj0hb8yb9gfh8z9r3uup485m?device=nexus7&scale=50&autoplay=false&orientation=portrait&deviceColor=black" width="364px" height="634px" frameborder="0" scrolling="no"></iframe></center>
     This is an app that I designed for looking a Fast Food Menus on your phone, and it gives you the abilty to calulate the base cost of your meal. ( Base Menu and Without Taxes ) 
@@ -118,6 +146,25 @@ body, html {
   </div>
 </div>
 
-
 </body>
+
+<script>
+function switchTab(tab_id, tab_content) {
+// first of all we get all tab content blocks (I think the best way to get them by class names)
+var x = document.getElementsByClassName("tabcontent");
+var i;
+for (i = 0; i < x.length; i++) {
+x[i].style.display = 'none'; // hide all tab content
+}
+document.getElementById(tab_content).style.display = 'block'; // display the content of the tab we need
+
+// now we get all tab menu items by class names (use the next code only if you need to highlight current tab)
+var x = document.getElementsByClassName("tabmenu");
+var i;
+for (i = 0; i < x.length; i++) {
+x[i].className = 'tabmenu'; 
+}
+document.getElementById(tab_id).className = 'tm_active';
+}
+</script>
 </html>
